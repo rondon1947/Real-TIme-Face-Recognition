@@ -44,11 +44,7 @@ for fx in os.listdir(dataset_path):
 face_dataset = np.concatenate(face_data, axis=0)
 face_labels = np.concatenate(labels, axis=0).reshape((-1, 1))
 
-# print(face_dataset.shape)
-# print(face_labels.shape)
-
 trainset = np.concatenate((face_dataset, face_labels), axis=1)
-# print(trainset.shape)
 
 
 while True:
